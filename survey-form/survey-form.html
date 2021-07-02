@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Preference Survey</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey-form.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Let's find out what you like to eat...</h1>
+        <p id="description" class="byline">Do you prefer burgers?  Tacos?  Something else?</p>
+    </header>
+
+    <main>
+ 
+        <form id="survey-form" action="">
+            <label for="name" class="form-prompt" id="name-label">Name:</label>
+            <input class="form-field" id="name" type="text" onfocus="this.placeholder=''" onblur="this.placeholder='Enter name here'" placeholder="Enter name here" required>
+            <label for="email" class="form-prompt" id="email-label">Email:</label>
+            <input class="form-field" id="email" type="email" onfocus="this.placeholder=''" onblur="this.placeholder='Enter email here'" placeholder="Enter email here" required>
+            <label for="number" class="form-prompt" id="number-label">Member ID Number:</label>
+            <input class="form-field" id="number" type="number" min="0" max="999999999" onfocus="this.placeholder=''" onblur="this.placeholder='Enter number here'" placeholder="Enter number here">
+            <label for="bitcoin" class="form-prompt">Bitcoin private key:  &#x1F602; &#x1F923;</label>
+            <input class="form-field" type="text" id="bitcoin" onfocus="this.placeholder=''" onblur="this.placeholder='Enter bitcoin private key here'" placeholder="Enter bitcoin private key here">
+
+            <p class="form-prompt">Which ethnic food is your favorite?</p>
+            <div class="selector-list">
+                <label for="american"><input id="american" value="american" type="radio" name="ethnic-choice" checked>American</label>
+                <label for="mexican"><input id="mexican" value="mexican" type="radio" name="ethnic-choice">Mexican</label>
+                <label for="chinese"><input id="chinese" value="chinese" type="radio" name="ethnic-choice">Chinese</label>
+                <label for="thai"><input id="thai" value="thai" type="radio" name="ethnic-choice">Thai</label>
+                <label for="middle-eastern"><input id="middle-eastern" value="middle-eastern" type="radio" name="ethnic-choice">Middle Eastern</label>
+            
+            </div>
+
+            <label for="drop-down" class="form-prompt">Pick one strange dish you'd be willing to try:</label>
+            <select name="drop-down" class="form-field" id="dropdown">
+                <option value="haggis">Haggis (sheep organ pudding -- Scotland)</option>
+                <option value="snails">Escargot (snails cooked in butter -- France)</option>
+                <option value="fugu">Fugu (poisonous puffer fish -- Japan)</option>
+                <option value="shrimp">Goong Ten (raw, live shrimp -- Thailand)</option>
+                <option value="birds-nest">Bird's Nest Soup (with bird saliva -- China)</option>
+                <option value="rats">Grilled Whole Rats (East Timor)</option>
+            </select>
+
+            <p class="form-prompt">Which foods are off limits for you?</p>
+            <div class="selector-list">
+                <label for="shellfish"><input id="shellfish" value="shellfish" type="checkbox" name="banned-foods">Shellfish</label>
+                <label for="offal"><input id="offal" value="offal" type="checkbox" name="banned-foods">Offal</label>
+                <label for="dairy"><input id="dairy" value="dairy" type="checkbox" name="banned-foods">Dairy</label>
+                <label for="grains"><input id="grains" value="grains" type="checkbox" name="banned-foods">Grains</label>
+                <label for="meat"><input id="meat" value="meat" type="checkbox" name="banned-foods">Meat</label>
+                <label for="gluten"><input id="gluten" value="gluten" type="checkbox" name="banned-foods">Gluten</label>
+                <label for="sugar"><input id="sugar" value="sugar" type="checkbox" name="banned-foods">Sugar</label>
+                <label for="soy"><input id="soy" value="soy" type="checkbox" name="banned-foods">Soy</label>
+                <label for="beans"><input id="beans" value="beans" type="checkbox" name="banned-foods">Beans</label>
+                <label for="MSG"><input id="MSG" value="MSG" type="checkbox" name="banned-foods">MSG</label>
+            </div>
+            
+            <label for="extra-comments" class="form-prompt">Add any additional food comments below:</label>
+            <textarea name="extra-comments" id="extra-comments" class="comments"></textarea>
+
+            <button type="submit" class="submit-btn" id="submit">Submit</button>
+
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

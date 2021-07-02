@@ -1,0 +1,399 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #003d9a;
+    font-family: 'Roboto', sans-serif;
+
+    /* font: 18px "raleway-medium", sans-serif;
+    line-height: 1.5;
+    color: #231F20;
+    overflow-x: hidden; */
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width:  1030px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.top-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    margin: 0;
+}
+.logo1 {
+    width: 30%;
+}
+
+.phone {
+    font-size: 1.8rem;
+    color: #0068bf;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #003d9a;
+    padding: 10px;
+}
+
+nav .container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+
+}
+
+nav .container ul li a {
+    color: #57c5d4;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-left: 3rem;
+}
+
+/* h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 0rem;
+    padding-bottom: 1rem;
+    letter-spacing: 0.15rem;
+} */
+
+.grey-text {
+    color: rgb(185, 185, 185);
+}
+
+.blue-text {
+    color: #0068bf;
+}
+
+.opener {
+    /* width: 100%;
+    max-width:  950px;
+    padding: 0;
+    margin: 0 auto; */
+}
+
+.opener-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 0rem;
+    padding-bottom: 1rem;
+    letter-spacing: 0.15rem;
+}
+
+.byline {
+    background-color: white;
+    /* margin: 0 auto; */
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    top: 0;
+}
+
+.byline-text {
+    color: black;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+}
+
+.main-photo {
+    width: 100%;
+    margin-bottom: -4px;
+  
+}
+
+.floating-robot {
+    position: absolute;
+    height: 45%;
+    right: 21%;
+    bottom: 12%;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #0e5894;
+    list-style: none;
+    height: 40px;
+    margin: 0;
+    padding-right: 100px;
+
+
+
+}
+
+.navigation a {
+    color: #61dae2;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+.card-list {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-list li {
+    list-style: none;
+    width: 50%;
+    margin-bottom: 10px;
+
+    /* flex: 1 0 21%; */
+}
+
+.price-card-left {
+    background-color: #265aa9;
+    padding: 10px 40px;
+    height: 500px;
+}
+
+.price-card-right {
+    background-color: white;
+    padding: 10px 40px;
+    height: 500px;
+}
+
+
+.description-left {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.description-right {
+    color: black;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.table-left {
+    width: auto;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.table-right {
+    width: auto;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.units-left {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.units-right {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.price-left {
+    color: #61dae2;
+    font-size: 2.3rem;
+    padding-left: 20px;
+}
+
+.price-right {
+    color: #003d9a;
+    font-size: 2.3rem;
+    padding-left: 20px;
+}
+
+.leasing-left {
+    color: white;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-align: right;
+}
+
+.leasing-right {
+    color: #003d9a;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.pic-card {
+    background-image: url('images/square.jpg');
+    height: 500px;
+    background-size: contain;
+    margin: 0;
+    padding: 10px 40px;
+    position: relative;
+}
+
+.price-card-small-text {
+    text-align: right;
+    top: 1.4em;
+    right: 2.5em;
+    font-size: 1.1rem;
+    line-height: 0.6rem;
+    letter-spacing: 0.05rem;
+    position: absolute;
+
+}
+
+.product-name-1 {
+    text-align: right;
+    top: 46%;
+    right: 8.5%;
+    font-size: 2.4rem;
+    margin-tp: 30px;
+    position: absolute;
+    color: #003d9a;
+    font-weight: lighter;
+}
+
+.product-name-2 {
+    text-align: right;
+    top: 50%;
+    right: 8.5%;
+    font-size: 3.5rem;
+    margin-tp: 30px;
+    position: absolute;
+    color: #003d9a;
+    font-weight: 500;
+}
+
+.product-photo {
+    position: absolute;
+    height: 74%;
+    right: 50%;
+    bottom: 12%;
+}
+
+.product-photo-1000 {
+    position: absolute;
+    height: 74%;
+    right: 40%;
+    bottom: 10%;
+}
+
+.product-photo-300 {
+    position: absolute;
+    height: 74%;
+    right: 38%;
+    bottom: 7%;
+}
+
+.cta {
+    background-color: white;
+    padding: 5em 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.phone-logo {
+    width: 4rem;
+}
+
+.phone-logo-text {
+    color: #0068bf;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    text-decoration: none;
+}
+
+.waitlist-btn {
+    width: 33rem;
+    height: 7rem;
+    background-color: #61dae2;
+    border: none;
+    font-size: 2rem;
+    margin-left: 7rem;
+}
+
+.waitlist-btn:hover {
+    cursor: pointer;
+}
+
+.waitlist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5em;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f2f2; 
+    padding: 4.5rem;
+}
+
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 8.5rem;
+}
+
+.footer-nav-links {
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+
+footer .container .footer-flex ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer .container .footer-flex ul li a:hover {
+    text-decoration:underline;
+}
+
+.footer-contact-form {
+    display: flex;
+    width: 35rem;
+}
+
+.form {
+    /* display: inline; */
+}
+
+.copyright {
+    margin-top: auto;
+    margin-left: 30px;
+    line-height: 0.5rem;
+}

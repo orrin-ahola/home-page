@@ -1,0 +1,213 @@
+body {
+    background-color: lightgrey;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.video-container video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
+    filter:brightness(50%);
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    background-color: hsl(302, 47%, 12%);
+    padding-left: 0;
+    padding-right: 40px;
+    height: 100px;
+}
+
+.logo {
+    height: 58px;
+} 
+
+.navigation li:first-child {
+    margin-right: auto;
+
+}
+
+.navigation a {
+    color: rgb(212, 212, 212);
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    height: 100px;
+    
+}
+
+.navigation a:hover {
+    background-color: hsl(276, 57%, 29%);
+}
+
+.dropdown {
+    float: left;
+    /* overflow: hidden; */
+}
+
+.dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: rgb(212, 212, 212);
+    padding: 39px 1em;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+.dropdown:hover .dropbtn {
+    background-color: hsl(276, 57%, 29%);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(212, 212, 212);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+}
+
+.dropdown-content a {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    height: 55px;
+  }
+
+.dropdown-content a:hover {
+    color: rgb(212, 212, 212);
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-flow: column;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    margin-top: 45px;
+}
+
+.h2_top {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 20px;
+}
+
+.h2_bottom {
+    color: hsl(204, 43%, 93%);
+    margin-top: 45px;
+}
+
+.h3_top {
+    color: hsl(218, 22%, 67%);
+    font-size: 18px;
+}
+
+.h3_bottom {
+    /* color: hsl(204, 43%, 93%); */
+    font-size: 18px;
+}
+
+h5 {
+    color:hsl(203, 35%, 90%);
+    font-size: 17px;
+    line-height: 0px;
+
+}
+
+.enroll_btn {
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    height: 67px;
+    border-radius: 12px;
+    border-width: 0px;
+    margin-top: 7px;
+    color: hsl(204, 43%, 93%);
+    font-size: 24px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.enroll_btn:hover {
+    cursor: pointer;
+}
+
+
+
+
+.price {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.price_freq {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    /* color:hsl(71, 73%, 54%); */
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 800px;
+    border-radius: 15px;
+    overflow:hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.panel1 {
+    height: 278px;
+    width: 100%;
+    background-color: white;
+    font-weight: 700;
+    padding-left: 50px;
+}
+
+.panel2 {
+    flex:1;
+    height: 322px;    
+    background-color: hsl(179, 62%, 43%);
+    color:hsl(204, 43%, 93%);
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.panel3 {
+    flex:1;
+    height: 322px;
+    background-color: hsl(179, 39%, 60%);
+    padding-left: 50px;
+    padding-right: 50px;
+
+
+}

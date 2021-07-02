@@ -1,0 +1,321 @@
+:root {
+    --clr-primary-300: #e6ad59;
+    --clr-primary-500: #bf3b26;
+    --clr-neutral-100: #ffffff;
+    --clr-neutral-900: rgba(0, 0, 0, 0.685);
+    --clr-primary-900: #5e0334;
+
+    --ff-primary: 'Roboto Slab', serif;
+    --ff-heading: 'Lemon', cursive;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.header {
+    height: 100vh;
+    background-size: cover;
+    background-position: 0 2.5rem;
+    background-image: url('assets/Harvest-at-La-Crau-with-Montmajour-in-the-Background.jpg');
+    /* background-image: url(/assets/oil-painting-1393556.jpg); */
+    /* -webkit-transition: background 1.5s linear;
+    -moz-transition: background 1.5s linear;
+    -o-transition: background 1.5s linear;
+    -ms-transition: background 1.5s linear;
+    transition: background 1.5s linear; */
+    /* z-index: 99;
+    display: flex;
+    position: relative; */
+
+}
+
+/* .header::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-image: url(/assets/oil-painting-1393556.jpg);
+    background-size: cover;
+    opacity: 0.5;
+} */
+
+/* header h1 {
+    position: relative;
+    color: var(--clr-neutral-100);
+} */
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-heading);
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3,
+p,
+.form-field {
+    margin-bottom: 1em;
+}
+
+.nav-link1 {
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+.nav-link2 {
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+.nav-link3 {
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--clr-primary-500);
+    width: 100%;
+    transition: 0.4s;
+    z-index: 99;
+    position: fixed;
+
+}
+
+.header-img {
+    margin-right: auto;
+    width: 4.5rem;
+    height: 3rem;
+    transition: 0.4s;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+    text-align: right;
+    flex-direction: column;
+    top: 100%;
+    right: 0;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+    position: absolute;
+    background-color: var(--clr-primary-500);
+    
+}
+
+nav ul li {
+    padding-top: 0.7rem;
+}
+
+nav ul li a {
+    color: var(--clr-neutral-100);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.menu-btn {
+    padding-right: 1rem;
+    color: var(--clr-neutral-100)
+}
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.container {
+    margin: 0 auto;
+    width: min(90%, 70rem);
+}
+
+.container--narrow {
+    max-width: 40rem;
+}
+
+.video-container {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+
+@media (min-width: 40em) {
+    .split {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .split-item {
+        width: 48%;
+    }
+
+    #nav-bar {
+        position: fixed;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        padding-right: 2rem;
+        margin: 0;
+        position: relative;
+        padding-bottom: 0;
+        
+    }
+
+    nav ul li {
+        padding-top: 0;
+    }
+
+    nav ul li a {
+        margin-left: 2rem;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    body {
+        font-size: 1.3125rem;
+    }
+
+    #header-img {
+        margin-right: auto;
+        width: 6rem;
+        height: 4rem;
+        transition: 0.4s;
+    }
+
+    .buy-btn {
+        width: 20%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    .form-label {
+        width: 15%;
+    }
+
+    .form-field {
+        width: 70%;
+    }
+}
+
+
+.split-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-white {
+    color: var(--clr-neutral-900); 
+    background-color: var(--clr-neutral-100);
+}
+
+.bg-tan { 
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-primary-300);
+}
+
+.bg-dark { 
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-500);
+}
+
+.bg-white h1,
+.bg-tan h1 {
+    color: var(--clr-primary-900);
+}
+
+.product-photo {
+    border: 6px solid var(--clr-primary-900);
+    border: 6px solid var(--clr-neutral-100);
+}
+
+.price-btn {
+    margin-top: auto;
+    margin-bottom: 3em;
+}
+
+.buy-btn {
+    width: 30%;
+}
+
+.contact-btn {
+    margin: 1rem 0;
+    width: 50%;
+
+}
+
+.form-field {
+    padding-left: 0.6rem;
+    height: 1.6rem;
+}
+
+html{scroll-behavior:smooth}
+

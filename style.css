@@ -1,0 +1,39 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    /* padding-bottom: 0.8rem; */
+}
+
+h1,
+h2,
+h3 {
+    line-height: 2rem;
+}
+
+p {
+    margin-top: 0.5rem;
+    padding-bottom: 1.2rem;
+    padding-left: 2rem;
+}
+
