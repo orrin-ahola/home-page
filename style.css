@@ -10,6 +10,10 @@ header {
     margin-bottom: 2rem;
 }
 
+footer {
+    margin-top: 3rem;
+
+}
 .container {
     width: 90%;
     max-width: 50rem;
