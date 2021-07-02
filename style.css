@@ -7,6 +7,10 @@ body {
     font-size: 1.4rem;
 }
 
+.center-text {
+    text-align: center;
+}
+
 header {
     margin-bottom: 2rem;
 }
