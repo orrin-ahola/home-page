@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Chad-Vasc calculator</title>
+    </head>
+    <body>
+        <h3>Chad-Vasc calculator</h3>
+        <table>
+            <tr>
+                <th>Age:</th>
+                <th>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="age" id="young" value="0" checked>
+                        <label for="young">Under than 65</label>
+                    </div>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="age" id="middle" value="1">
+                        <label for="middle">65 - 74 (+1)</label>
+                    </div>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="age" id="old" value="2">
+                        <label for="old">75 and up (+2)</label>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>Sex:</th>
+                <th>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="sex" id="female" value="1">
+                        <label for="female">Female (+1)</label>
+                    </div>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="sex" id="male" value="0" checked>
+                        <label for="male">Male</label>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>CHF hx:</th>
+                <th>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="chf" id="nochf" value="0" checked>
+                        <label for="nochf">No</label>
+                    </div>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="chf" id="chf" value="1">
+                        <label for="chf">Yes (+1)</label>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>HTN hx:</th>
+                <th>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="htn" id="nohtn" value="0" checked>
+                        <label for="nohtn">No</label>
+                    </div>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="htn" id="htn" value="1">
+                        <label for="htn">Yes (+1)</label>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>CVA/TIA/    </br>PE hx:</th>
+                <th>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="cva" id="nocva" value="0" checked>
+                        <label for="nocva">No</label>
+                    </div>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="cva" id="cva" value="2">
+                        <label for="cva">Yes (+2)</label>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>Vasc dz hx:</th>
+                <th>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="vascdz" id="novascdz" value="0" checked>
+                        <label for="novascdz">No</label>
+                    </div>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="vascdz" id="vascdz" value="1">
+                        <label for="vascdz">Yes (+1)</label>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>DM hx:</th>
+                <th>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="dm" id="nodm" value="0" checked>
+                        <label for="nodm">No</label>
+                    </div>
+                    <div>
+                        <input onclick="calcChadVasc()" type="radio" name="dm" id="dm" value="1">
+                        <label for="dm">Yes (+1)</label>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <h3 id="test">Chad Vasc = 0</h3>
+        <h3 id="risk"></h3>
+        <script src="index.js"></script>
+    </body>
+</html>
+
