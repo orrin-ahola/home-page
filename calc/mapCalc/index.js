@@ -33,6 +33,7 @@ window.addEventListener("DOMContentLoaded", function (){
         sbpOption.text = 300 - i;
         sbpOption.value = 300 - i;
         sbpOption.selected = "";
+        sbpOption.style.width = "50px";
         sbp.options[i] = sbpOption;
 
         dbpOption.text = 300 - i;
