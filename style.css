@@ -31,7 +31,8 @@ footer {
 }
 
 a {
-    /* padding-bottom: 0.8rem; */
+	text-decoration: none;
+    display: block;
 }
 
 h1,

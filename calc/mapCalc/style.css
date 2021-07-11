@@ -1,0 +1,22 @@
+
+table {
+    width: 15rem;
+}
+
+th {
+    /* border: 1px solid blue; */
+    text-align: left;
+    font-weight: 400;
+}
+
+input {
+    width: 3rem;
+}
+
+.container {
+    text-align: left;
+}
+
+#target-btn {
+    display: none;
+}

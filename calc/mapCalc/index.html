@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>MAP calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3>MAP calculator</h3>
+            <table>
+                <tr>
+                    <th>SBP:</th>
+                    <th><input type="number" name="sbp" id="sbp"></th>
+                </tr>
+                <tr>
+                    <th>DBP:</th>
+                    <th><input type="number" name="dbp" id="dbp"></th>
+                </tr>
+            </table>
+            <button id="calc-btn" onclick="showMap()">Calculate</button>
+            <h3 id="map"></h3>
+            <button id="target-btn" onclick="calcTarget()">Show targets</button>
+            <h3 id="target"></h3>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
+
