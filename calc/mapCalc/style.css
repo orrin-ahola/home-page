@@ -21,11 +21,15 @@ input {
 #target-btn {
     display: none;
 }
-
+/* 
 .bp_list {
     width: 50px;
 }
 
 select, option {
     width: auto;
+} */
+
+select option {
+    width: 100px;
 }
