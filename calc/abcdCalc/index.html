@@ -25,12 +25,12 @@
                 <th>BP >= 140/90:</th>
                 <th>
                     <div>
-                        <input onclick="calcABCD()" type="radio" name="bp" id="bp" value="0" checked>
-                        <label for="bp">No</label>
+                        <input onclick="calcABCD()" type="radio" name="bp" id="high" value="0" checked>
+                        <label for="high">No</label>
                     </div>
                     <div>
-                        <input onclick="calcABCD()" type="radio" name="bp" id="bp" value="1">
-                        <label for="bp">Yes (+1)</label>
+                        <input onclick="calcABCD()" type="radio" name="bp" id="normal" value="1">
+                        <label for="normal">Yes (+1)</label>
                     </div>
                 </th>
             </tr>
@@ -38,16 +38,16 @@
                 <th>Clinical features:</th>
                 <th>
                     <div>
-                        <input onclick="calcABCD()" type="radio" name="clinical" id="clinical" value="2">
-                        <label for="clinical">Unilateral weakness (+2)</label>
+                        <input onclick="calcABCD()" type="radio" name="clinical" id="weak" value="2">
+                        <label for="weak">Unilateral weakness (+2)</label>
                     </div>
                     <div>
-                        <input onclick="calcABCD()" type="radio" name="clinical" id="clinical" value="1">
-                        <label for="clinical">Speech disturbance without weakness (+1)</label>
+                        <input onclick="calcABCD()" type="radio" name="clinical" id="visual" value="1">
+                        <label for="visual">Speech disturbance without weakness (+1)</label>
                     </div>
                     <div>
-                        <input onclick="calcABCD()" type="radio" name="clinical" id="clinical" value="0" checked>
-                        <label for="clinical">Other symptoms</label>
+                        <input onclick="calcABCD()" type="radio" name="clinical" id="other" value="0" checked>
+                        <label for="other">Other symptoms</label>
                     </div>
                 </th>
             </tr>
@@ -55,16 +55,16 @@
                 <th>Duration:</th>
                 <th>
                     <div>
-                        <input onclick="calcABCD()" type="radio" name="duration" id="duration" value="0" checked>
-                        <label for="duration">Less than 10 min</label>
+                        <input onclick="calcABCD()" type="radio" name="duration" id="ten-min" value="0" checked>
+                        <label for="ten-min">Less than 10 min</label>
                     </div>
                     <div>
-                        <input onclick="calcABCD()" type="radio" name="duration" id="duration" value="1">
-                        <label for="duration">10 to 59 min (+1)</label>
+                        <input onclick="calcABCD()" type="radio" name="duration" id="ten-fifty-nine" value="1">
+                        <label for="ten-fifty-nine">10 to 59 min (+1)</label>
                     </div>
                     <div>
-                        <input onclick="calcABCD()" type="radio" name="duration" id="duration" value="2">
-                        <label for="duration">60 or more min (+2)</label>
+                        <input onclick="calcABCD()" type="radio" name="duration" id="hour" value="2">
+                        <label for="hour">60 or more min (+2)</label>
                     </div>
                 </th>
             </tr>
@@ -72,8 +72,8 @@
                 <th>Hx diabetes:</th>
                 <th>
                     <div>
-                        <input onclick="calcABCD()" type="radio" name="dm" id="dm" value="0" checked>
-                        <label for="dm">No</label>
+                        <input onclick="calcABCD()" type="radio" name="dm" id="nodm" value="0" checked>
+                        <label for="nodm">No</label>
                     </div>
                     <div>
                         <input onclick="calcABCD()" type="radio" name="dm" id="dm" value="1">
