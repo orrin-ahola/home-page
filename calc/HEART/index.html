@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>HEART score</title>
+    </head>
+    <body>
+        <h3>HEART Score</h3>
+        <table>
+            <tr>
+                <th>History:</th>
+                <th>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="hx" id="slight" value="0" checked>
+                        <label for="slight">Slightly suspicious</label>
+                    </div>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="hx" id="moderate" value="1">
+                        <label for="moderate">Moderately suspicious (+1)</label>
+                    </div>
+                       <div>
+                        <input onclick="calcHEART()" type="radio" name="hx" id="highly" value="2">
+                        <label for="highly">Highly suspicious (+2)</label>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>EKG:</th>
+                <th>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="ekg" id="normal" value="0" checked>
+                        <label for="normal">Normal</label>
+                    </div>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="ekg" id="nonspec" value="1">
+                        <label for="nonspec">Non-specific repol changes (+1)</label>
+                    </div>
+                       <div>
+                        <input onclick="calcHEART()" type="radio" name="ekg" id="stdep" value="2">
+                        <label for="stdep">ST depression (+2)</label>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>Age:</th>
+                <th>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="age" id="young" value="0" checked>
+                        <label for="young">Under 45 (+2)</label>
+                    </div>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="age" id="middle" value="1">
+                        <label for="middle">45 - 64 (+1)</label>
+                    </div>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="age" id="old" value="2">
+                        <label for="old">65+ (2+)</label>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>Risk factors:</th>
+                <th>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="rf" id="lowrisk" value="0" checked>
+                        <label for="lowrisk">No risk factors</label>
+                    </div>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="rf" id="modrisk" value="1">
+                        <label for="modrisk">1-2 risk factors (+1)</label>
+                    </div>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="rf" id="highrisk" value="2">
+                        <label for="highrisk">3+ risk factors (+2)</label>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th>Troponin:</th>
+                <th>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="trop" id="zerotrop" value="0" checked>
+                        <label for="zerotrop">Normal</label>
+                    </div>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="trop" id="mildtrop" value="1">
+                        <label for="mildtrop">1-3x normal</label>
+                    </div>
+                    <div>
+                        <input onclick="calcHEART()" type="radio" name="trop" id="hightrop" value="2">
+                        <label for="hightrop">Above 3x normal</label>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <h3 id="heart">HEART score = 0</h3>
+        <script src="index.js"></script>
+    </body>
+</html>
+
