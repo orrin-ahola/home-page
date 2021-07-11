@@ -22,6 +22,10 @@ input {
     display: none;
 }
 
+.bp_list {
+    width: 50px;
+}
+
 select, option {
-    width: 100px;
+    width: auto;
 }
