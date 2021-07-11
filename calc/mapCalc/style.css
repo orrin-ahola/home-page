@@ -30,6 +30,6 @@ select, option {
     width: auto;
 } */
 
-select option {
+.bp_list select option {
     width: 100px;
 }
