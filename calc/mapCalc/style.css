@@ -22,6 +22,6 @@ input {
     display: none;
 }
 
-select {
+select, option {
     width: 100px;
 }
