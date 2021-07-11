@@ -21,19 +21,3 @@ input {
 #target-btn {
     display: none;
 }
-/* 
-.bp_list {
-    width: 50px;
-}
-
-select, option {
-    width: auto;
-} */
-/* 
-.bp_list select option {
-    width: 100px;
-} */
-
-#sbp_list {
-    width: 100px;
-}

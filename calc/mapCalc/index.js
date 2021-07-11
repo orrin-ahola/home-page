@@ -1,9 +1,13 @@
 
 function calcMap() {
-    let sbp = document.getElementById("sbp_list").value; 
-    let dbp = document.getElementById("dbp_list").value;
-    let map = Math.round((( 2 * Number(dbp) ) + Number(sbp) ) / 3);
-    return map;
+    let sbp = Number(document.getElementById("sbp_list").value); 
+    let dbp = Number(document.getElementById("dbp_list").value);
+    if (sbp > dbp) {
+        let map = Math.round((( 2 * dbp ) + sbp ) / 3);
+        return map;
+    } else {
+        return "-0- SBP must be greater than DBP"
+    }
 }
 
 function showMap() {
@@ -33,7 +37,6 @@ window.addEventListener("DOMContentLoaded", function (){
         sbpOption.text = 300 - i;
         sbpOption.value = 300 - i;
         sbpOption.selected = "";
-        sbpOption.style.width = "50px";
         sbp.options[i] = sbpOption;
 
         dbpOption.text = 300 - i;
