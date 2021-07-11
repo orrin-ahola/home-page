@@ -1,0 +1,36 @@
+body {
+    padding: 2rem;
+    font-family: sans-serif;
+    font-size: 12px;
+    /* max-widthpx: 200px; */
+}
+
+table {
+    border-spacing: 0 20px;
+}
+
+th {
+    text-align: left;
+    font-weight: 400;
+    vertical-align: top;
+
+
+}
+
+input {
+    margin-top: 0px;
+    margin-bottom: 13px;
+    margin-left: 10px;
+}
+
+label {
+    display: block;
+    /* margin-top: -20px; */
+    margin-left: 30px;
+    margin-top: -28px;
+    margin-bottom: 10px;
+}
+
+#target-btn {
+    display: none;
+}

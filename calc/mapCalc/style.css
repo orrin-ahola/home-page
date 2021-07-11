@@ -2,30 +2,20 @@ body {
     padding: 2rem;
     font-family: sans-serif;
     font-size: 1rem;
-    border: 1px solid red;
     max-width: 200px;
 }
 
-
-
 table {
     width: 15rem;
-    border: 1px solid red;
-
 }
 
 th {
-    /* border: 1px solid blue; */
     text-align: left;
     font-weight: 400;
 }
 
 input {
     width: 3rem;
-}
-
-.container {
-    /* text-align: left; */
 }
 
 #target-btn {
